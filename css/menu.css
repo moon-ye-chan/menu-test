@@ -1,0 +1,113 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+#main_bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/menu-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main_header {
+  width: inherit;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_contents {
+  width: inherit;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_contents > h2 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 5rem;
+  color: #333;
+}
+.main_contents > p {
+  padding: 0 20%;
+  text-align: center;
+}
+
+.logo {
+  width: 210px;
+}
+
+.main_nav {
+  display: flex;
+}
+.main_nav > li {
+  padding-left: 50px;
+}
+.main_nav > li > a {
+  color: #bbb;
+}
+.main_nav > li > a:hover {
+  color: #333;
+  border-bottom: #333 1px solid;
+}
+
+.main_dp {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main_dp > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+main > section > div > img {
+  width: 300px;
+  height: 200px;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: maroon;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > p {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  #main_bg {
+    background-position: center;
+  }
+  .main_header {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main_nav > li {
+    padding: 20px 20px 0;
+  }
+}/*# sourceMappingURL=menu.css.map */
